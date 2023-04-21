@@ -1,19 +1,27 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import TextStyled from './TextStyled';
 
+const styles = StyleSheet.create({
+	container: {
+		padding: 20,
+		paddingBottom: 5,
+		paddingTop: 5
+	},
+})
 const RepositoryItem = (props) => (
     <View 
         key={props.id}
-        style={{ padding: 20, paddingBottom: 5, paddingTop: 5 }}
+        style={styles.container}
     >
-        <Text style={{ fontWeight: 'bold', marginBottom: 5 }}>Id: {props.id}</Text>
-        <Text>FullName: {props.fullName}</Text>
-        <Text>Description: {props.description}</Text>
-        <Text>Language: {props.language}</Text>
-        <Text>StargazersCount: {props.stargazersCount}</Text>
-        <Text>ForksCount: {props.forksCount}</Text>
-        <Text>ReviewCount: {props.reviewCount}</Text>
-        <Text>RatingAverage: {props.ratingAverage}</Text>
+        <TextStyled big bold>Id: {props.id}</TextStyled>
+        <TextStyled bold>FullName: {props.fullName}</TextStyled>
+        <TextStyled blue>Description: {props.description}</TextStyled>
+        <TextStyled bold>Language: {props.language}</TextStyled>
+        <TextStyled small>StargazersCount: {props.stargazersCount}</TextStyled>
+        <TextStyled small>ForksCount: {props.forksCount}</TextStyled>
+        <TextStyled small>ReviewCount: {props.reviewCount}</TextStyled>
+        <TextStyled small>RatingAverage: {props.ratingAverage}</TextStyled>
     </View>
 );
 

@@ -14,14 +14,13 @@ const RepositoryItem = (props) => (
         key={props.id}
         style={styles.container}
     >
-        <TextStyled big bold>Id: {props.id}</TextStyled>
-        <TextStyled bold>FullName: {props.fullName}</TextStyled>
-        <TextStyled blue>Description: {props.description}</TextStyled>
-        <TextStyled bold>Language: {props.language}</TextStyled>
-        <TextStyled small>StargazersCount: {props.stargazersCount}</TextStyled>
-        <TextStyled small>ForksCount: {props.forksCount}</TextStyled>
-        <TextStyled small>ReviewCount: {props.reviewCount}</TextStyled>
-        <TextStyled small>RatingAverage: {props.ratingAverage}</TextStyled>
+        <TextStyled fontSize={'subHeading'} fontWeight={'bold'}>{props.fullName}</TextStyled>
+        <TextStyled >{props.description}</TextStyled>
+        <TextStyled >{props.language}</TextStyled>
+        <TextStyled >StargazersCount: {props.stargazersCount}</TextStyled>
+        <TextStyled >ForksCount: {props.forksCount}</TextStyled>
+        <TextStyled >ReviewCount: {props.reviewCount}</TextStyled>
+        <TextStyled >RatingAverage: {props.ratingAverage}</TextStyled>
     </View>
 );
 

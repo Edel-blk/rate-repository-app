@@ -34,6 +34,7 @@ export default function TextStyled ({ align, children, color, fontSize, fontWeig
 		color === 'secondary' && styles.colorSecondary,
 		fontSize === 'subHeading' && styles.subHeading,
 		fontWeight === 'bold' && styles.bold,
+		style
 	]
 
 	return (

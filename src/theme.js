@@ -7,7 +7,7 @@ const theme = {
     },
     fontSizes: {
         body: 14,
-        subHeading: 18,
+        subHeading: 16,
     },
     fonts: {
         main: 'System'
